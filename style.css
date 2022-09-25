@@ -1,0 +1,77 @@
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 40vh 80vh 40vh;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+nav {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: flex-end;
+
+}
+span {
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: rgb(194, 212, 244);
+    cursor: pointer;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background: orange;
+    text-align: center;
+}
+main {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    background: red;
+    text-align: center;
+
+}
+footer{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    background: yellow;
+    text-align: center;
+
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(194, 212, 244);
+    transition: .2s;
+    cursor: pointer;
+    overflow-y: hidden;
+    text-align: center;
+
+}
+.menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: .3s;
+}
+.menu a:hover {
+    color: orangered;
+}
+.menu .close {
+    font-size: 15px;
+    text-align: right;
+}
